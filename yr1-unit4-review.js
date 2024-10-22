@@ -17,13 +17,13 @@ let countdown;
 const quizArray = [
   {
     id: "0",
-    question: `<p class="question">What does this sign mean?</p><img src="images/no-swimming.png" style="height: 100px">`,
+    question: `<p class="question">What does this sign mean?</p><img src="no-swimming.png" style="height: 100px">`,
     options: ["Enjoy swim here.", "No swim here.", "Don't swim here.", "Be swim here."],
     correct: "Don't swim here."
   },
   {
     id: "1",
-    question: `<p class="question">What time is it now?</p><img src="images/two-fifteen.png" style="height: 100px">`,
+    question: `<p class="question">What time is it now?</p><img src="two-fifteen.png" style="height: 100px">`,
     options: ["At two fifteen o'clock.", "It's two fifteen o'clock.", "At two fifteen.", "It's two fifteen."],
     correct: "It's two fifteen."
   },
