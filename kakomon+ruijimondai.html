@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>共同テスト対策問題</title>
+    <style>
+
+        body {
+            font-family: 'Comic Sans MS';
+        }
+
+        .question-box {
+            font-size: 20px;
+            display: grid;
+            grid-template-columns: 30px 400px 250px 100px;
+        }
+
+        .question-box:hover {
+            background-color: lightgray;
+        }
+
+        .question-box1 {
+            font-size: 20px;
+            display: grid;
+            grid-template-columns: 30px 60px 300px 150px 30px 60px 300px 150px;
+        }
+
+        .results-icon {
+            height: 25px;
+        }
+
+        .ans {
+            color: green;
+            font-size: 20px;
+            font-family: 'Comic Sans MS';
+            font-weight: bold;
+            margin: 10px;
+            padding-left: 10px;
+        }
+
+        .submit-button {
+            font-family: 'Comic Sans MS'; 
+            font-size: 20px; 
+            border-style: solid;
+            border-width: 3px;
+            padding: 12px;
+            margin-top:20px;
+            cursor: pointer;
+        }
+
+        .result {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>過去問・類似問題</h1>
+    <h2>A　次の英文の（　）内の語を、適する形に直しなさい。</h2>
+
+    <div class="question-box">
+        <p>①</p>
+        <p>
+            There are many<strong>（ story ）</strong>in this book.
+        </p>
+        <input class="ans ans1" type="text">
+        <p class="result result1"></p>
+    </div>
+
+    <div class="question-box">
+        <p>②</p>
+        <p>
+            Tsuyoshi<strong>（ study ）</strong>science every day.
+        </p>
+        <input class="ans ans2" type="text">
+        <p class="result result2"></p>
+    </div>
+
+    <div class="question-box">
+        <p>③</p>
+        <p>
+            This dog is<strong>（ big ）</strong>than that one.
+        </p>
+        <input class="ans ans3" type="text">
+        <p class="result result3"></p>
+    </div>
+    
+    <div class="question-box">
+        <p>④</p>
+        <p>
+            They were<strong>（ make ）</strong>dinner then.
+        </p>
+        <input class="ans ans4" type="text">
+        <p class="result result4"></p>
+    </div>
+    
+    <div class="question-box">
+        <p>⑤</p>
+        <p>
+            Yuki likes<strong>（ run ）</strong>in the park.
+        </p>
+        <input class="ans ans5" type="text">
+        <p class="result result5"></p>
+    </div>
+
+    <div class="question-box">
+        <p>⑥</p>
+        <p>
+            Mr. Koga<strong>（ teach ）</strong>us P.E. last year.
+        </p>
+        <input class="ans ans6" type="text">
+        <p class="result result6"></p>
+    </div>
+    
+    <div class="question-box">
+        <p>⑦</p>
+        <p>
+            <strong>（ Play ）</strong>sports is exciting for me.
+        </p>
+        <input class="ans ans7" type="text">
+        <p class="result result7"></p>
+    </div>
+    
+    <div class="question-box">
+        <p>⑧</p>
+        <p>
+            Hokkaido is the <strong>（ large ）</strong>in Japan.
+        </p>
+        <input class="ans ans8" type="text">
+        <p class="result result8"></p>
+    </div>
+    
+    <div class="question-box">
+        <p>⑨</p>
+        <p>
+            I want<strong>（ buy ）</strong>a new bag.
+        </p>
+        <input class="ans ans9" type="text">
+        <p class="result result9"></p>
+    </div>
+    
+    <div class="question-box">
+        <p>⑩</p>
+        <p>
+            He has already<strong>（ eat ）</strong>breakfast.
+        </p>
+        <input class="ans ans10" type="text">
+        <p class="result result10"></p>
+    </div>
+
+    <h2>Ｂ　日本語を英語に直しなさい。</h2>
+    <div class="question-box1">
+        <p>①</p>
+        <p style="font-weight: bold; text-align: right">
+            ３月
+        </p>
+        <input class="ans ans11" type="text">
+        <p class="result result11"></p>
+        <p>②</p>
+        <p style="font-weight: bold; text-align: right">
+            １０月
+        </p>
+        <input class="ans ans12" type="text">
+        <p class="result result12"></p>
+    </div>
+
+    <div class="question-box1">
+        <p>③</p>
+        <p style="font-weight: bold; text-align: right">
+            １月
+        </p>
+        <input class="ans ans13" type="text">
+        <p class="result result13"></p>
+        <p>④</p>
+        <p style="font-weight: bold; text-align: right">
+            ４月
+        </p>
+        <input class="ans ans14" type="text">
+        <p class="result result14"></p>
+    </div>
+
+
+    <div class="question-box1">
+        <p>⑤</p>
+        <p style="font-weight: bold; text-align: right">
+            ８月
+        </p>
+        <input class="ans ans15" type="text">
+        <p class="result result15"></p>
+        <p>⑥</p>
+        <p style="font-weight: bold; text-align: right">
+            ７月
+        </p>
+        <input class="ans ans16" type="text">
+        <p class="result result16"></p>
+    </div>
+    
+    <div class="question-box1">
+        <p>⑦</p>
+        <p style="font-weight: bold; text-align: right">
+            ２月
+        </p>
+        <input class="ans ans17" type="text">
+        <p class="result result17"></p>
+        <p>⑧</p>
+        <p style="font-weight: bold; text-align: right">
+            １１月
+        </p>
+        <input class="ans ans18" type="text">
+        <p class="result result18"></p>
+    </div>
+    
+    <div class="question-box1">
+        <p>⑨</p>
+        <p style="font-weight: bold; text-align: right">
+            ５月
+        </p>
+        <input class="ans ans19" type="text">
+        <p class="result result19"></p>
+        <p>⑩</p>
+        <p style="font-weight: bold; text-align: right">
+            ６月
+        </p>
+        <input class="ans ans20" type="text">
+        <p class="result result20"></p>
+    </div>
+    
+    <div class="question-box1">
+        <p>⑪</p>
+        <p style="font-weight: bold; text-align: right">
+            ９月
+        </p>
+        <input class="ans ans21" type="text">
+        <p class="result result21"></p>
+        <p>⑫</p>
+        <p style="font-weight: bold; text-align: right">
+            １２月
+        </p>
+        <input class="ans ans22" type="text">
+        <p class="result result22"></p>
+    </div>
+
+    <button onclick="
+        let score = 0;
+
+        const answer1 = document.querySelector('.ans1').value;
+        if (answer1 === 'stories') {
+            document.querySelector('.result1')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result1')
+                .innerHTML = 'stories';
+        };
+
+        const answer2 = document.querySelector('.ans2').value;
+        if (answer2 === 'studies') {
+            document.querySelector('.result2')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result2')
+                .innerHTML = 'studies';
+        };
+
+        const answer3 = document.querySelector('.ans3').value;
+        if (answer3 === 'bigger') {
+            document.querySelector('.result3')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result3')
+                .innerHTML = 'bigger';
+        };
+
+        const answer4 = document.querySelector('.ans4').value;
+        if (answer4 === 'making') {
+            document.querySelector('.result4')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result4')
+                .innerHTML = 'making';
+        };
+
+        const answer5 = document.querySelector('.ans5').value;
+        if (answer5 === 'running') {
+            document.querySelector('.result5')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result5')
+                .innerHTML = 'running';
+        };
+
+        const answer6 = document.querySelector('.ans6').value;
+        if (answer6 === 'taught') {
+            document.querySelector('.result6')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result6')
+                .innerHTML = 'taught';
+        };
+
+        const answer7 = document.querySelector('.ans7').value;
+        if (answer7 === 'Playing') {
+            document.querySelector('.result7')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result7')
+                .innerHTML = 'Playing';
+        };
+
+        const answer8 = document.querySelector('.ans8').value;
+        if (answer8 === 'largest') {
+            document.querySelector('.result8')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result8')
+                .innerHTML = 'largest';
+        };
+
+        const answer9 = document.querySelector('.ans9').value;
+        if (answer9 === 'to buy') {
+            document.querySelector('.result9')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result9')
+                .innerHTML = 'to buy';
+        };
+
+        const answer10 = document.querySelector('.ans10').value;
+        if (answer10 === 'eaten') {
+            document.querySelector('.result10')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result10')
+                .innerHTML = 'eaten';
+        };
+
+        const answer11 = document.querySelector('.ans11').value;
+        if (answer11 === 'March') {
+            document.querySelector('.result11')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result11')
+                .innerHTML ='March';
+        };
+
+        const answer12 = document.querySelector('.ans12').value;
+        if (answer12 === 'October') {
+            document.querySelector('.result12')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result12')
+                .innerHTML = 'October';
+        };
+
+        const answer13 = document.querySelector('.ans13').value;
+        if (answer13 === 'January') {
+            document.querySelector('.result13')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result13')
+                .innerHTML = 'January';
+        };
+
+        const answer14 = document.querySelector('.ans14').value;
+        if (answer14 === 'April') {
+            document.querySelector('.result14')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result14')
+                .innerHTML = 'April';
+        };
+
+        const answer15 = document.querySelector('.ans15').value;
+        if (answer15 === 'August') {
+            document.querySelector('.result15')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result15')
+                .innerHTML = 'August';
+        };
+
+        const answer16 = document.querySelector('.ans16').value;
+        if (answer16 === 'July') {
+            document.querySelector('.result16')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result16')
+                .innerHTML = 'July';
+        };
+
+        const answer17 = document.querySelector('.ans17').value;
+        if (answer17 === 'February') {
+            document.querySelector('.result17')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result17')
+                .innerHTML = 'February';
+        };
+
+        const answer18 = document.querySelector('.ans18').value;
+        if (answer18 === 'November') {
+            document.querySelector('.result18')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result18')
+                .innerHTML = 'November';
+        };
+
+        const answer19 = document.querySelector('.ans19').value;
+        if (answer19 === 'May') {
+            document.querySelector('.result19')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result19')
+                .innerHTML = 'May';
+        };
+
+        const answer20 = document.querySelector('.ans20').value;
+        if (answer20 === 'June') {
+            document.querySelector('.result20')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result20')
+                .innerHTML = 'June';
+        };
+
+        const answer21 = document.querySelector('.ans21').value;
+        if (answer21 === 'September') {
+            document.querySelector('.result21')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result21')
+                .innerHTML = 'September';
+        };
+
+        const answer22 = document.querySelector('.ans22').value;
+        if (answer22 === 'December') {
+            document.querySelector('.result22')
+                .innerHTML = `<img src='correct-icon.png' class='results-icon'>`;
+            score += 1;
+        } else {
+            document.querySelector('.result22')
+                .innerHTML = 'December';
+        };
+
+        document.querySelector('.total')
+            .innerHTML = `Your score is ${score}/22.`;
+    " class="submit-button">Submit answers</button>
+
+    <p class="total" style="font-size: 35px; font-weight: bold"></p>
+
+</body>
+</html>
