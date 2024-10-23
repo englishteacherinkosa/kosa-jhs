@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>共同テスト対策問題①</title>
+    <title>共同テスト対策問題</title>
     <style>
 
         body {
@@ -240,6 +240,8 @@
         <p class="result result22"></p>
     </div>
 
+    <p class="total" style="font-size: 35px; font-weight: bold"></p>
+    
     <button onclick="
         let score = 0;
 
@@ -467,7 +469,9 @@
             .innerHTML = `Your score is ${score}/22.`;
     " class="submit-button">Submit answers</button>
 
-    <p class="total" style="font-size: 35px; font-weight: bold"></p>
+    <button onclick="
+        window.location.reload()
+    " class="submit-button">Clear answers</button>
 
 </body>
 </html>
