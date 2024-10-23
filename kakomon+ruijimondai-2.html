@@ -245,6 +245,8 @@
         <p class="result resultb7"></p>
     </div>
 
+    <p class="total" style="font-size: 35px; font-weight: bold"></p>
+
     <button onclick="
         let score = 0;
 
@@ -472,7 +474,9 @@
             .innerHTML = `Your score is ${score}/22.`;
     " class="submit-button">Submit answers</button>
 
-    <p class="total" style="font-size: 35px; font-weight: bold"></p>
+    <button onclick="
+        window.location.reload()
+    " class="submit-button">Clear answers</button>
 
 </body>
 </html>
