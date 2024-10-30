@@ -1,0 +1,25 @@
+body {
+  font-family: 'Calibri';
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#quiz,
+#submit,
+#results {
+  font-size: 20px;
+}
+
+#quiz {
+  line-height: 30px;
+}
