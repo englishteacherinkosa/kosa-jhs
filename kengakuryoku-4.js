@@ -4,7 +4,7 @@ const submitButton = document.getElementById('submit');
 
 const myQuestions = [
   {
-    questionA: "A: Did you see Mike yesterday.",
+    questionA: "A: Did you see Mike yesterday?",
     questionB: "B: Yes, I (\xa0\xa0\xa0\xa0\xa0). I saw him at the library.",
     answers: {
       a: "do",
@@ -89,7 +89,7 @@ function buildQuiz(){
         answers.push(
           `<label>
             <input type="radio" name="question${questionNumber}" value="${letter}">
-            ${letter} :
+            ${letter}:
             ${currentQuestion.answers[letter]}
           </label>`
         );
