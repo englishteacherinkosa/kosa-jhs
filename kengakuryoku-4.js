@@ -1,12 +1,16 @@
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
+const optionsContainer = document.getElementById('options-box');
+const itemBoxContainer1 = document.getElementById('item-box-container1');
+const itemBoxContainer2 = document.getElementById('item-box-container2');
 const submitButton = document.getElementById('submit');
+const resultsContainer = document.getElementById('results');
 
-const myQuestions = [
+const questions1 = [
   {
-    questionA: "A: Did you see Mike yesterday?",
-    questionB: "B: Yes, I (\xa0\xa0\xa0\xa0\xa0). I saw him at the library.",
-    answers: {
+    question: {
+      A: "Did you see Mike yesterday.",
+      B: "Yes, I (\xa0\xa0\xa0\xa0\xa0). I saw him at the library."
+    },
+    options: {
       a: "do",
       b: "am",
       c: "did",
@@ -15,9 +19,11 @@ const myQuestions = [
     correctAnswer: "c"
   },
   {
-    questionA: "A: There (\xa0\xa0\xa0\xa0\xa0) a lot of books in your father's room.",
-    questionB: "B: He likes reading very much.",
-    answers: {
+    question: {
+      A: "There (\xa0\xa0\xa0\xa0\xa0) a lot of books in your father's room.",
+      B: "He likes reading very much."
+    },
+    options: {
       a: "is",
       b: "are",
       c: "have",
@@ -26,9 +32,11 @@ const myQuestions = [
     correctAnswer: "b"
   },
   {
-    questionA: "A: How was the festival?",
-    questionB: "B: It was exciting. I enjoyed (\xa0\xa0\xa0\xa0\xa0) with others.",
-    answers: {
+    question: {
+      A: "How was the festival?",
+      B: "It was exciting. I enjoyed (\xa0\xa0\xa0\xa0\xa0) with others."
+    },
+    options: {
       a: "dancing",
       b: "was dancing",
       c: "to dance",
@@ -37,20 +45,27 @@ const myQuestions = [
     correctAnswer: "a"
   },
   {
-    questionA: "A: I have a lot of homework today.",
-    questionB: "B: You (\xa0\xa0\xa0\xa0\xa0) play video games today.",
-    answers: {
+    question: {
+      A: "I have a lot of homework today.",
+      B: "You (\xa0\xa0\xa0\xa0\xa0) play video games today."
+    },
+    options: {
       a: "can",
       b: "will",
       c: "don't have to",
       d: "must not"
     },
     correctAnswer: "d"
-  },
+  }
+];
+
+const questions2 = [
   {
-    questionA: "A: What are the (\xa0\xa0\xa0\xa0\xa0) of the flowers, <i>ajisai</i>?",
-    questionB: "B: They are white, blue, and red. They are beautiful",
-    answers: {
+    question: {
+      A: "What are the (\xa0\xa0\xa0\xa0\xa0) of the flowers, <i>ajisai</i>?",
+      B: "They are white, blue, and red. They are beautiful."
+    },
+    options: {
       a: "fruits",
       b: "kinds",
       c: "colors",
@@ -59,9 +74,11 @@ const myQuestions = [
     correctAnswer: "c"
   },
   {
-    questionA: "A: What was you brother doing (\xa0\xa0\xa0\xa0\xa0) you came home?",
-    questionB: "B: He was watching TV.",
-    answers: {
+    question: {
+      A: "What was you brother doing (\xa0\xa0\xa0\xa0\xa0) you came home?",
+      B: "B: He was watching TV."
+    },
+    options: {
       a: "when",
       b: "because",
       c: "that",
@@ -71,79 +88,110 @@ const myQuestions = [
   }
 ];
 
-function buildQuiz(){
-  // variable to store the HTML output
-  const output = [];
 
-  // for each question...
-  myQuestions.forEach(
+function buildTest(questions, num) {
+
+  const itemBox = [];
+  
+  questions.forEach(
     (currentQuestion, questionNumber) => {
-
-      // variable to store the list of possible answers
-      const answers = [];
-
-      // and for each available answer...
-      for(letter in currentQuestion.answers){
-
-        // ...add an HTML radio button
-        answers.push(
-          `<label>
-            <input type="radio" name="question${questionNumber}" value="${letter}">
-            ${letter}:
-            ${currentQuestion.answers[letter]}
-          </label>`
+      
+      const options = [];
+      for(number in currentQuestion.options) {
+        options.push(
+          `<div class="option-box">
+            <label>
+              <input type="radio" name="question${num}-${questionNumber}" value="${number}"/>
+              <strong>${number}</strong>&nbsp;&nbsp;${currentQuestion.options[number]}
+            </label>
+          </div>`
         );
       }
 
-      // add this question and its answers to the output
-      output.push(
-        `<div class="question"> ${currentQuestion.questionA} </div>
-        <div class="question"> ${currentQuestion.questionB} </div>
-        <div class="answers"> ${answers.join('')} </div>
-        <hr>`
-      );
+      itemBox.push(
+        `<div id="item-box">
+          <div class="check-mark-box${num}"></div>
+          <div class="question-number">
+            <strong>${questionNumber+1}</strong>      
+          </div>
+          <div class="question-box">
+            <div class="question-A">
+              <div class="question-A-letter">
+                A:
+              </div>
+              <div class="question-A-text">
+                ${currentQuestion.question['A']}
+              </div>
+            </div>
+            <div class="question-B">
+              <div class="question-B-letter">
+                B:
+              </div>
+              <div class="question-B-text">
+                ${currentQuestion.question['B']}
+              </div>
+            </div>
+            <div class="options-box">${options.join('')}</div>
+          </div>
+        </div>`
+      )
     }
-  );
+  )
 
-  // finally combine our output list into one string of HTML and put it on the page
-  quizContainer.innerHTML = output.join('');
+  return itemBox.join('');
 };
 
-function showResults(){
+itemBoxContainer1.innerHTML = buildTest(questions1, 1);
+itemBoxContainer2.innerHTML = buildTest(questions2, 2);
 
-  // gather answer containers from our quiz
-  const answerContainers = quizContainer.querySelectorAll('.answers');
 
-  // keep track of user's answers
+function checkAnswers() {
+
+  const optionsContainers1 = itemBoxContainer1.querySelectorAll('.options-box');
+  const optionsContainers2 = itemBoxContainer2.querySelectorAll('.options-box');
+
   let numCorrect = 0;
 
-  // for each question...
-  myQuestions.forEach( (currentQuestion, questionNumber) => {
+  questions1.forEach(
+    (currentQuestion, questionNumber) => {
 
-    // find selected answer
-    const answerContainer = answerContainers[questionNumber];
-    const selector = `input[name=question${questionNumber}]:checked`;
-    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+      const optionsContainer1 = optionsContainers1[questionNumber];
+      const selector = `input[name=question1-${questionNumber}]:checked`;
+      const userAnswer = (optionsContainer1.querySelector(selector) || {}).value;
+      const checkMarkContainer1 = document.querySelectorAll('.check-mark-box1');
 
-    // if answer is correct
-    if(userAnswer === currentQuestion.correctAnswer){
-      // add to the number of correct answers
-      numCorrect++;
-
-      // color the answers green
-      answerContainers[questionNumber].style.color = 'blue';
+      if(userAnswer === currentQuestion.correctAnswer) {
+        numCorrect++;
+        optionsContainers1[questionNumber].style.color = 'blue';
+        checkMarkContainer1[questionNumber].innerHTML = `<img src='correct-icon.png' class='result-icon'>`;
+      } else {
+        optionsContainers1[questionNumber].style.color = 'red';
+        checkMarkContainer1[questionNumber].innerHTML = `<img src='incorrect-icon.png' class='result-icon'>`;
+      }
     }
-    // if answer is wrong or blank
-    else{
-      // color the answers red
-      answerContainers[questionNumber].style.color = 'red';
+  )
+
+  questions2.forEach(
+    (currentQuestion, questionNumber) => {
+
+      const optionsContainer2 = optionsContainers2[questionNumber];
+      const selector = `input[name=question2-${questionNumber}]:checked`;
+      const userAnswer = (optionsContainer2.querySelector(selector) || {}).value;
+      const checkMarkContainer2 = document.querySelectorAll('.check-mark-box2');
+
+      if(userAnswer === currentQuestion.correctAnswer) {
+        numCorrect++;
+        optionsContainers2[questionNumber].style.color = 'blue';
+        checkMarkContainer2[questionNumber].innerHTML = `<img src='correct-icon.png' class='result-icon'>`;
+      } else {
+        optionsContainers2[questionNumber].style.color = 'red';
+        checkMarkContainer2[questionNumber].innerHTML = `<img src='incorrect-icon.png' class='result-icon'>`;
+      }
     }
-  });
+  )
 
-  // show number of correct answers out of total
-  resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-  }
+  console.log(numCorrect);
+  resultsContainer.innerHTML = `Score: ${numCorrect}/${questions1.length + questions2.length}`;
+};
 
-buildQuiz();
-
-submitButton.addEventListener('click', showResults);
+submitButton.addEventListener('click', checkAnswers);

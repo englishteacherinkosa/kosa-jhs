@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>県学力</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="kengakuryoku.css" />
+  <title>県学力テスト</title>
+  <link rel="stylesheet" href="kengakuryoku.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>テスト０５</h1>
-    <div id="quiz"></div>
-    <button id="submit">Submit Quiz</button>
-    <div id="results"></div>
+  <div id="container">
+    <div id="header">
+      <div id="test-title">県学力テスト０５</div>
+      <div id="results"></div>
+    </div>
+    <div id="first-instruction">次の（１）と（２）の問いに答えなさい。</div>
+    <div class="instruction-box">
+      <div class="instruction-number">
+        （１）
+      </div>
+      <div class="instruction-text">
+        次の①～④の対話文が成り立つように、(&emsp;&emsp;)に入る最も適切なものを、あとの１～４から１つずつ選びなさい。
+      </div>
+    </div>
+    <div id="item-box-container1"></div>
+  
+    <div class="instruction-box">
+      <div class="instruction-number">
+        （２）
+      </div>
+      <div class="instruction-text">
+        次の①と②について、(&emsp;&emsp;)に入る最も適切なものを、あとの１～４から１つずつ選びなさい。
+      </div>
+    </div>
+    <div id="item-box-container2"></div>
+    <button id="submit">回答を送信</button>
   </div>
   <script src="kengakuryoku-5.js"></script>
 </body>
