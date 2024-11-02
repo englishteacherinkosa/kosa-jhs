@@ -111,8 +111,8 @@ function buildTest(questions, num) {
       itemBox.push(
         `<div id="item-box">
           <div class="check-mark-box${num}"></div>
-          <div class="question-number">
-            <strong>${questionNumber+1}</strong>      
+          <div class="question-number-box">
+            <span class="question-number">${questionNumber+1}</span>
           </div>
           <div class="question-box">
             <div class="question-A">
