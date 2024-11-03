@@ -117,9 +117,10 @@ body {
   background-color: rgb(240,240,240);
   color: black;
   cursor: pointer;
+  border-style: solid;
   border-width: 1.6px;
   border-radius: 8px;
-  padding: 5px;
+  padding: 5px 12px;
 }
 
 .result-icon {
