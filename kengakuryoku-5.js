@@ -40,7 +40,7 @@ const questions1 = [
       1: "must",
       2: "must not",
       3: "can",
-      4: "can't"
+      4: "can&#x2019;t"
     },
     correctAnswer: "1"
   },
