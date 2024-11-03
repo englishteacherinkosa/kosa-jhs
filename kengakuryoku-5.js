@@ -8,7 +8,7 @@ const questions1 = [
   {
     question: {
       A: "(&emsp;&emsp;) is Mr. Brown from?",
-      B: "He's from London."
+      B: "He&#x2019;s from London."
     },
     options: {
       1: "What",
@@ -33,8 +33,8 @@ const questions1 = [
   },
   {
     question: {
-      A: "Mom, can I do to the park now?",
-      B: "No, you can't. You (&emsp;&emsp;) do you homework first."
+      A: "Mom, can I go to the park now?",
+      B: "No, you can&#x2019;t. You (&emsp;&emsp;) do you homework first."
     },
     options: {
       1: "must",
@@ -62,8 +62,8 @@ const questions1 = [
 const questions2 = [
   {
     question: {
-      A: "Let's go to the (&emsp;&emsp;) this weekend",
-      B: "That's sounds good. I want to take pictures of the animals."
+      A: "Let&#x2019;s go to the (&emsp;&emsp;) this weekend",
+      B: "That&#x2019;s sounds good. I want to take pictures of the animals."
     },
     options: {
       1: "museum",
@@ -76,7 +76,7 @@ const questions2 = [
   {
     question: {
       A: "You look happy today.",
-      B: "Yes. I'm happy (&emsp;&emsp;) I got a new bag for my birthday."
+      B: "Yes. I&#x2019;m happy (&emsp;&emsp;) I got a new bag for my birthday."
     },
     options: {
       1: "because",
@@ -191,7 +191,7 @@ function checkAnswers() {
   )
 
   console.log(numCorrect);
-  resultsContainer.innerHTML = `Score: ${numCorrect}/${questions1.length + questions2.length}`;
+  resultsContainer.innerHTML = `点数：${numCorrect}/${questions1.length + questions2.length}`;
 };
 
 submitButton.addEventListener('click', checkAnswers);

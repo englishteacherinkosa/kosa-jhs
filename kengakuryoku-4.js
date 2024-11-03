@@ -7,7 +7,7 @@ const resultsContainer = document.getElementById('results');
 const questions1 = [
   {
     question: {
-      A: "Did you see Mike yesterday.",
+      A: "Did you see Mike yesterday?",
       B: "Yes, I (\xa0\xa0\xa0\xa0\xa0). I saw him at the library."
     },
     options: {
@@ -20,7 +20,7 @@ const questions1 = [
   },
   {
     question: {
-      A: "There (\xa0\xa0\xa0\xa0\xa0) a lot of books in your father's room.",
+      A: "There (\xa0\xa0\xa0\xa0\xa0) a lot of books in your father&#x2019;s room.",
       B: "He likes reading very much."
     },
     options: {
@@ -191,7 +191,7 @@ function checkAnswers() {
   )
 
   console.log(numCorrect);
-  resultsContainer.innerHTML = `Score: ${numCorrect}/${questions1.length + questions2.length}`;
+  resultsContainer.innerHTML = `点数：${numCorrect}/${questions1.length + questions2.length}`;
 };
 
 submitButton.addEventListener('click', checkAnswers);
