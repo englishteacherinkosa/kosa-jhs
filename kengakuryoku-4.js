@@ -52,7 +52,7 @@ const questions1 = [
     options: {
       a: "can",
       b: "will",
-      c: "don't have to",
+      c: "don&#x2019;t have to",
       d: "must not"
     },
     correctAnswer: "d"
