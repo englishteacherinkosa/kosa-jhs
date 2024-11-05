@@ -11,12 +11,12 @@ const questions1 = [
       B: "Yes, I (\xa0\xa0\xa0\xa0\xa0). I saw him at the library."
     },
     options: {
-      a: "do",
-      b: "am",
-      c: "did",
-      d: "was"
+      1: "do",
+      2: "am",
+      3: "did",
+      4: "was"
     },
-    correctAnswer: "c"
+    correctAnswer: "3"
   },
   {
     question: {
@@ -24,12 +24,12 @@ const questions1 = [
       B: "He likes reading very much."
     },
     options: {
-      a: "is",
-      b: "are",
-      c: "have",
-      d: "has"
+      1: "is",
+      2: "are",
+      3: "have",
+      4: "has"
     },
-    correctAnswer: "b"
+    correctAnswer: "2"
   },
   {
     question: {
@@ -37,12 +37,12 @@ const questions1 = [
       B: "It was exciting. I enjoyed (\xa0\xa0\xa0\xa0\xa0) with others."
     },
     options: {
-      a: "dancing",
-      b: "was dancing",
-      c: "to dance",
-      d: "danced"
+      1: "dancing",
+      2: "was dancing",
+      3: "to dance",
+      4: "danced"
     },
-    correctAnswer: "a"
+    correctAnswer: "1"
   },
   {
     question: {
@@ -50,12 +50,12 @@ const questions1 = [
       B: "You (\xa0\xa0\xa0\xa0\xa0) play video games today."
     },
     options: {
-      a: "can",
-      b: "will",
-      c: "don&#x2019;t have to",
-      d: "must not"
+      1: "can",
+      2: "will",
+      3: "don&#x2019;t have to",
+      4: "must not"
     },
-    correctAnswer: "d"
+    correctAnswer: "4"
   }
 ];
 
@@ -66,25 +66,25 @@ const questions2 = [
       B: "They are white, blue, and red. They are beautiful."
     },
     options: {
-      a: "fruits",
-      b: "kinds",
-      c: "colors",
-      d: "places"
+      1: "fruits",
+      2: "kinds",
+      3: "colors",
+      4: "places"
     },
-    correctAnswer: "c"
+    correctAnswer: "3"
   },
   {
     question: {
       A: "What was you brother doing (\xa0\xa0\xa0\xa0\xa0) you came home?",
-      B: "B: He was watching TV."
+      B: "He was watching TV."
     },
     options: {
-      a: "when",
-      b: "because",
-      c: "that",
-      d: "if"
+      1: "when",
+      2: "because",
+      3: "that",
+      4: "if"
     },
-    correctAnswer: "a"
+    correctAnswer: "1"
   }
 ];
 
