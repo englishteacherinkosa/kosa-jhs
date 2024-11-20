@@ -63,7 +63,7 @@ const questions2 = [
   {
     question: {
       A: "What is your father&#x2019;s (\xa0\xa0\xa0\xa0\xa0)?",
-      B: "He is teacher. He teaches math."
+      B: "He is a teacher. He teaches math."
     },
     options: {
       1: "question",
