@@ -1,5 +1,6 @@
 const optionsContainer = document.getElementById('options-box');
 const itemBoxContainer1 = document.getElementById('item-box-container1');
+const itemBoxContainer2 = document.getElementById('item-box-container2');
 const submitButton = document.getElementById('submit');
 const resultsContainer = document.getElementById('results');
 
