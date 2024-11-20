@@ -1,6 +1,5 @@
 const optionsContainer = document.getElementById('options-box');
 const itemBoxContainer1 = document.getElementById('item-box-container1');
-const itemBoxContainer2 = document.getElementById('item-box-container2');
 const submitButton = document.getElementById('submit');
 const resultsContainer = document.getElementById('results');
 
@@ -166,7 +165,7 @@ function checkAnswers() {
   )
 
   console.log(numCorrect);
-  resultsContainer.innerHTML = `点数：${numCorrect}/${questions1.length + questions2.length}`;
+  resultsContainer.innerHTML = `点数：${numCorrect}/${questions1.length}`;
 };
 
 submitButton.addEventListener('click', checkAnswers);
