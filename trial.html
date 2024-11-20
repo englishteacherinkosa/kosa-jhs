@@ -2,149 +2,26 @@
 <html>
 <head>
   <title>県学力テスト</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .instruction-box {
-      font-size: 18px;
-      display: flex;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-
-    .item-box {
-      font-size: 20px;
-      display: grid;
-      grid-template-columns: 50px 30px 1fr;
-      line-height: 30px;
-      margin-bottom: 20px;
-    }
-
-    .question-number {
-      margin-left: px;
-    }
-
-    .question-box {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .question-A,
-    .question-B {
-      display: grid;
-      grid-template-columns: 30px 1fr;
-    }
-
-    .options-box {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .submit-button {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .result-icon {
-      width: 50%;
-    }
-
-    .check-mark-box {
-      display: flex;
-      justify-content: right;
-      align-items: flex-start;
-      padding-top: 2px;
-      padding-right: 2px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="trial.css"/>
 </head>
 <body>
-  <h1>県学力テスト０５</h1>
-  <h2>次の（１）と（２）の問いに答えなさい。</h2>
-  <div class="instruction-box">
-    <div class="instruction-number">
-      （１）
+  <div id="container">
+    <div id="section-instruction-box">
+      <div id="section-instruction-number"><span class="section-instruction-number-style">5</span></div>
+      <div id="section-instruction-text">次の（１）と（２）の問いに答えなさい。</div>
+      <div id="results"></div>
     </div>
-    <div class="intruction-text">
-      次の①～④の対話文が成り立つように、(&emsp;&emsp;)に入る最も適切なものを、あとの１～４から１つずつ選びなさい。
+    <div class="instruction-box">
+      <div class="instruction-number">
+        （１）
+      </div>
+      <div class="instruction-text">
+        次の①～④の対話文が成り立つように、(&emsp;&emsp;)に入る最も適切なものを、あとの１～４から１つずつ選びなさい。
+      </div>
     </div>
+    <div id="item-box-container1"></div>
+    <button id="submit">回答を送信</button>
   </div>
-
-  <div class="item-box">
-    <div class="check-mark-box"></div>
-    <div class="question-number">
-      ①      
-    </div>
-    <div class="question-box">
-      <div class="question-A">
-        <div class="question-A-letter">
-          A:
-        </div>
-        <div class="question-A-text">
-          (&emsp;&emsp;) is Mr. Brown from?
-        </div>
-      </div>
-      <div class="question-B">
-        <div class="question-B-letter">
-          B:
-        </div>
-        <div class="question-B-text">
-          He's from London.
-        </div>
-      </div>
-      <div class="options-box">
-        <div class="option-box">
-          <input type="radio" name="question1-1" id="choice1-1" value="1"/>
-          <label for="choice1-1"><strong>1</strong>&emsp;What</label>
-        </div>
-        <div class="option-box">
-          <input type="radio" name="question1-1" id="choice1-2" value="2"/>
-          <label for="choice1-2"><strong>2</strong>&emsp;Who</label>
-        </div>
-        <div class="option-box">
-          <input type="radio" name="question1-1" id="choice1-3" value="3"/>
-          <label for="choice1-3"><strong>3</strong>&emsp;Where</label>
-        </div>
-        <div class="option-box">
-          <input type="radio" name="question1-1" id="choice1-4" value="4"/>
-          <label for="choice1-4"><strong>4</strong>&emsp;When</label>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <button onclick="
-    checkAnswers();
-  " class="submit-button">回答を送信</button>
-
-
-  <script>
-
-    function buildQuiz() {
-      
-    }
-
-
-
-
-
-
-
-    function checkAnswers() {
-      const correctAnswer = "3";
-      const answer = document.querySelector('input[name="question1-1"]:checked').value;
-      const checkMarkContainer = document.querySelector('.check-mark-box');
-      
-      if (answer === correctAnswer) {
-        checkMarkContainer.innerHTML = `<img src='correct-icon.png' class='result-icon'>`;
-      } else {
-        checkMarkContainer.innerHTML = `<img src='incorrect-icon.png' class='result-icon'>`;
-      }
-    }
-  </script>
+  <script src="trial.js"></script>
 </body>
 </html>

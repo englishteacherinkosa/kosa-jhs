@@ -1,0 +1,138 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 12px;
+}
+
+#test-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#results {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#section-instruction-box {
+  display: grid;
+  grid-template-columns: 54.4px 2fr 1fr;
+  margin-bottom: 10px;
+}
+
+.section-instruction-number-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 40px;
+  background-color: black;
+  width: 45px;
+  height: 45px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+#section-instruction-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.instruction-box {
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#item-box {
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 50px 30px 1fr;
+  line-height: 30px;
+  margin-bottom: 20px;
+  border-bottom: solid;
+  border-color: lightgray;
+  border-width: 2px;
+}
+
+.question-number-box {
+  padding-top: 4px;
+}
+
+.question-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.question-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-A,
+.question-B {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+.options-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#submit {
+  align-self: flex-end;
+  font-size: 18px;
+  background-color: rgb(240,240,240);
+  color: black;
+  cursor: pointer;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  padding: 5px 12px;
+}
+
+.result-icon {
+  width: 50%;
+}
+
+.check-mark-box1,
+.check-mark-box2 {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  padding-top: 2px;
+  padding-right: 2px;
+}
