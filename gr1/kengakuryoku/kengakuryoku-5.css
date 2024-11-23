@@ -1,0 +1,150 @@
+:root {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin: 0px;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-number-and-instruction-box {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  border-bottom: solid;
+  margin-bottom: 20px;
+}
+
+#section-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+}
+
+#section-instruction-text {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+#subsection-number-and-instruction-box {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#subsection-number {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#subsection-instruction-text {
+  margin-left: 10px;
+}
+
+.question-box {
+  display: grid;
+  grid-template-columns: 60px 20px 1fr;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+#question-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-radius: 50%;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#question-and-answer-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#question-text {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-left: 10px;
+}
+
+#question-text-label {
+  margin-right: 10px;
+}
+
+.correct-answer {
+  margin-left: 11px;
+  color: red;
+}
+
+.option-box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 5px;
+}
+
+#submit-button {
+  align-self: flex-end;
+  width: 125px;
+  height: 45px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.check-mark-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.result-icon {
+  width: 20px;
+}
+
+.other-questions {
+  display: flex;
+  justify-content: center;
+}
