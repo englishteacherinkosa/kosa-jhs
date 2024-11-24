@@ -1,53 +1,53 @@
 const questions1 = [
   {
     questionText: {
-      A: "Are you a soccer fan?",
-      B: "Yes, (&emsp;&emsp;). I play it every day"
+      A: "(&emsp;&emsp;) your sister make lunch on Saturdays and Sundays?",
+      B: "Yes. I like her lunch."
     },
     options: {
-      1: "I am",
-      2: "I&#x2019;m not",
-      3: "I do",
-      4: "I don&#x2019;t"
+      1: "Are",
+      2: "Is",
+      3: "Do",
+      4: "Does"
+    },
+    answer: "4"
+  },
+  {
+    questionText: {
+      A: "(&emsp;&emsp;) ball is this?",
+      B: "It&#x2019;s my sister&#x2019;s."
+    },
+    options: {
+      1: "How",
+      2: "What",
+      3: "Which",
+      4: "Whose"
+    },
+    answer: "4"
+  },
+  {
+    questionText: {
+      A: "(&emsp;&emsp;) play soccer here.",
+      B: "I&#x2019;m sorry."
+    },
+    options: {
+      1: "Don&#x2019;t",
+      2: "Not",
+      3: "Aren&#x2019;t",
+      4: "Do"
     },
     answer: "1"
   },
   {
     questionText: {
-      A: "Can your brother play baseball?",
-      B: "Yes. I sometimes play it with (&emsp;&emsp;)."
+      A: "Are you and your brother baseball fans?",
+      B: "Yes, (&emsp;&emsp;) are."
     },
     options: {
-      1: "he",
-      2: "his",
-      3: "him",
-      4: "her"
-    },
-    answer: "3"
-  },
-  {
-    questionText: {
-      A: "(&emsp;&emsp;) is that teacher?",
-      B: "That is Mr. Inoue."
-    },
-    options: {
-      1: "Who",
-      2: "Whose",
-      3: "What",
-      4: "How"
-    },
-    answer: "1"
-  },
-  {
-    questionText: {
-      A: "Do you often play baseball with Mary?",
-      B: "Yes. She and I (&emsp;&emsp;) good friends."
-    },
-    options: {
-      1: "am",
-      2: "is",
-      3: "are",
-      4: "do"
+      1: "they",
+      2: "you",
+      3: "we",
+      4: "he"
     },
     answer: "3"
   }
@@ -56,27 +56,28 @@ const questions1 = [
 const questions2 = [
   {
     questionText: {
-      A: "I like (&emsp;&emsp;) very much. I play the guitar every day."
+      A: "Do you eat (&emsp;&emsp;) every day?",
+      B: "Yes. I eat it at seven in the morning."
     },
     options: {
-      1: "music",
-      2: "food",
-      3: "pictures",
-      4: "sports"
+      1: "lunch",
+      2: "breakfast",
+      3: "school",
+      4: "dinner"
     },
-    answer: "1"
+    answer: "2"
   },
   {
     questionText: {
-      A: "My brother studies English every day. He can (&emsp;&emsp;) it well."
+      A: "I go to Okinawa in (&emsp;&emsp;). I like summer."
     },
     options: {
-      1: "play",
-      2: "sing",
-      3: "speak",
-      4: "eat"
+      1: "March",
+      2: "August",
+      3: "November",
+      4: "January"
     },
-    answer: "3"
+    answer: "2"
   }
 ];
 

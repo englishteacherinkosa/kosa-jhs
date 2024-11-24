@@ -2,7 +2,7 @@ const questions1 = [
   {
     questionText: {
       A: "Are you a soccer fan?",
-      B: "Yes, (&emsp;&emsp;). I play it every day"
+      B: "Yes, (&emsp;&emsp;). I play it every day."
     },
     options: {
       1: "I am",
